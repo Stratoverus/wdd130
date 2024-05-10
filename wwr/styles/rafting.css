@@ -37,8 +37,11 @@ header {
 .hero h1 {
     position: absolute;
     top: 0;
-    right: 300px;
+    left: 0;
+    right: 0;
     background-color: rgba(158, 193, 163, 0.5);
+    padding: 10px 20px;
+    text-align: center;
 }
 
 .hero article {
