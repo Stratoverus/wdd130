@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-header, footer {
+header, .grid, footer {
     max-width: 840px;
     margin: 0 auto;
 }
@@ -34,7 +34,6 @@ h1{
 }
 
 .grid {
-    max-width: 840px;
     display: grid;
     align-items: center;
 }
@@ -85,7 +84,6 @@ aside img {
 }
 
 footer {
-    margin: 10px;
     border: 1px solid black;
     text-align: center;
 }
