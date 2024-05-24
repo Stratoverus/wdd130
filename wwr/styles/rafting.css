@@ -83,6 +83,12 @@ header {
     margin: 10px;
 }
 
+form {
+    display: grid;
+    border: none;
+    font-weight: 600;
+}
+
 section {
     border: 2px solid #40798C;
     margin-top: 10px;
@@ -130,6 +136,25 @@ figure {
 figcaption {
     text-align: center;
     font-size: small;
+    font-weight: 500;
+}
+
+.company {
+    display: grid;
+    font-size: large;
+    font-weight: 500;
+}
+
+.map {
+    grid-column: 2;
+    align-content: center;
+    justify-self: center;
+}
+
+.phone {
+    text-indent: 50px;
+    padding: 0;
+    margin: 0;
 }
 
 footer {
@@ -151,6 +176,12 @@ footer nav {
     justify-content: space-around;
 }
 
-footer nav a {
+footer nav a, footer a {
     text-decoration: none;
+}
+
+footer a {
+    color: var(--primary-color);
+    align-self: center;
+    justify-self: center;
 }
