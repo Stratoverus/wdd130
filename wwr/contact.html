@@ -36,23 +36,31 @@
                     </div>
                     <div class="contact-form column1">
                         <p>Reason for Inquiry?</p>
-                        <input type="radio" id="general" name="inquiry" value="General Inquiry">
-                        <label for="general">General Inquiry</label>
-                        <input type="radio" id="reservation" name="inquiry" value="Reservation Question">
-                        <label for="reservation">Reservation Question</label>
-                        <input type="radio" id="suggestion" name="inquiry" value="Website Suggestion">
-                        <label for="suggestion">Website Suggestion</label>
+                        <div>
+                            <input type="radio" id="general" name="inquiry" value="General Inquiry">
+                            <label for="general">General Inquiry</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="reservation" name="inquiry" value="Reservation Question">
+                            <label for="reservation">Reservation Question</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="suggestion" name="inquiry" value="Website Suggestion">
+                            <label for="suggestion">Website Suggestion</label>
+                        </div>
                     </div>
-                    <div class="contact-form column2">
+                    <div class="contact-form column2 message-box">
                         <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Type your message here..."></textarea>
+                        <textarea id="message" name="message" rows="8" placeholder="Type your message here..."></textarea>
                     </div>
-                    <div class="contact-form column2">
+                    <div class="contact-form column2 checkbox">
                         <input type="checkbox" id="newsletter" name="newsletter">
                         <label for="newsletter">Please subscribe me to the monthly newsletter.</label>
                     </div>
                 </fieldset>
-                <button type="submit">Submit Inquiry</button>
+                <div class="button">
+                    <button type="submit">Submit Inquiry</button>
+                </div>
             </form>
         </section>
         <section>
