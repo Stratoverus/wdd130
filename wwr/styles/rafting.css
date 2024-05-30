@@ -250,10 +250,10 @@ p {
 .moab-trips .washington-trips{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* column-gap: 20px; */
 }
 
 .trips-column1, .trips-column2 {
+    width: 100%;
     border: #40798C solid 2px;
     padding: 10px;
 }
@@ -311,6 +311,7 @@ p {
 
 .potential-column1, .potential-column2 {
     border: #40798C solid 2px;
+    width: 100%;
 }
 
 .home-email {
