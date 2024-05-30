@@ -13,13 +13,11 @@
     --nav-hover-background-color: #CFE0C3;
 }
 
-/* * {
-    background-color: var(--accent2-color);
-} */
-
 header, body, footer {
-    max-width: 1000px;
     margin: 0 auto;
+    border-left: #CFE0C3 solid 50px;
+    border-right: #CFE0C3 solid 50px;
+
 }
 
 body {
@@ -61,16 +59,17 @@ header {
     height: auto;
 }
 
-.hero h1 {
+.hero h1, .hero2 h1 {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    /* background-color: rgba(158, 193, 163, 0.9); */
     background-color: rgba(207, 224, 195, 0.9);
     padding: 10px 20px;
     text-align: center;
     font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .hero2 {
@@ -81,18 +80,6 @@ header {
     display: block;
     width: 100%;
     height: auto;
-}
-
-.hero2 h1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    /* background-color: rgba(158, 193, 163, 0.9); */
-    background-color: rgba(207, 224, 195, 0.9);
-    padding: 10px 20px;
-    text-align: center;
-    font-weight: 900;
 }
 
 .hero article {
@@ -133,9 +120,10 @@ fieldset {
     border: none;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* grid-template-rows: 1fr 1fr 1fr; */
     padding: 1rem;
+    margin: 0;
     column-gap: 50px;
+    justify-items: center;
 }
 
 .contact-form {
@@ -155,10 +143,12 @@ fieldset {
 
 .column1 {
     grid-column: 1;
+    width: 50%;
 }
 
 .column2 {
     grid-column: 2;
+    width: 100%;
 }
 
 button {
@@ -179,14 +169,18 @@ button:hover {
 }
 
 section {
-    border: 2px solid #40798C;
-    margin-top: 10px;
     background-color: #CFE0C3;
 }
 
 .history,.introduction {
     display: grid;
-    grid-template-columns: 1fr 200px 1fr;
+    grid-template-columns: 1fr 215px 1fr;
+}
+
+.introduction-top {
+    background-color: #CFE0C3;
+    display: flex;
+    flex-direction: column;
 }
 
 .introduction {
@@ -213,6 +207,9 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color);
     padding: 2px;
     text-align: center;
+    background-color: #CFE0C3;
+    margin: 0;
+    padding: 25px;
 }
 
 p {
@@ -221,7 +218,6 @@ p {
 
 .trips-intro {
     background-color: #CFE0C3;
-    border: solid #40798C 2px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -242,18 +238,23 @@ p {
 }
 
 .trips  {
-    margin-top: 10px;
     background-color: #CFE0C3;
     display: flex;
     flex-direction: row;
-    border: #40798C solid 2px;
     text-align: center;
     padding: 10px;
+    column-gap: 50px;
 }
 
 .moab-trips .washington-trips{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    /* column-gap: 20px; */
+}
+
+.trips-column1, .trips-column2 {
+    border: #40798C solid 2px;
+    padding: 10px;
 }
 
 .img-wrap {
@@ -302,9 +303,13 @@ p {
 .potential-trips {
     display: flex;
     background-color: #CFE0C3;
-    border: solid #40798C 2px;
     padding: 5px;
     text-align: center;
+    column-gap: 50px;
+}
+
+.potential-column1, .potential-column2 {
+    border: #40798C solid 2px;
 }
 
 .home-email {
@@ -320,6 +325,7 @@ p {
     grid-template-rows: 35px;
     align-items: center;
     padding: 10px;
+    width: 25%;
 }
 
 figure {
@@ -356,10 +362,8 @@ footer {
     padding: 10px;
     background-color: var(--accent2-color);
     display: grid;
-    grid-template-columns: 250px 500px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center; 
-    border: 2px solid #40798C;
-    margin-top: 10px;
     color: var(--primary-color);
     font-weight: 700;
     font-size: x-large;
