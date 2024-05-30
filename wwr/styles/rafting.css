@@ -194,6 +194,7 @@ section {
     width: 200px;
     height: auto;
     align-self: center;
+    padding: 20px;
 }
 
 .history img {
