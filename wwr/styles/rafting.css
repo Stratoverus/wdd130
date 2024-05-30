@@ -42,7 +42,7 @@ header {
     justify-content: space-evenly;
 }
 
-.menu a:hover {
+.menu a:hover, footer a:hover {
     text-decoration: underline;
 }
 
