@@ -110,6 +110,21 @@ header {
     margin: 10px;
 }
 
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: #CFE0C3;
+    padding-top: 20px;
+    padding: 5px;
+    justify-items: center;
+    align-items: center;
+    font-size: small;
+}
+
+.home-grid img {
+    max-width: 125px;
+}
+
 form {
     font-weight: 600;
 }
@@ -290,6 +305,21 @@ p {
     border: solid #40798C 2px;
     padding: 5px;
     text-align: center;
+}
+
+.home-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #CFE0C3;
+}
+
+.home-subscribe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 35px;
+    align-items: center;
+    padding: 10px;
 }
 
 figure {
